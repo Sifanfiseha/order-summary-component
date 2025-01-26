@@ -3,6 +3,7 @@
 
   --Pale-blue: hsl(225, 100%, 94%);
   --Bright-blue: hsl(245, 75%, 52%);
+  --Bright-blue-bg: hsla(245, 75%, 52%, 0.53);
 
   /* Neutral */
 
@@ -97,9 +98,18 @@ img {
 .primary {
   background-color: var(--Bright-blue);
   color: white;
+  transition: 0.3s ease;
+}
+.primary:hover {
+  box-shadow: 0 0 5px var(--Bright-blue);
+  /* background-color: var(--Bright-blue-bg); */
 }
 .secondary {
   color: var(--Desaturated-blue);
+  transition: 0.3s ease;
+}
+.secondary:hover {
+  color: black;
 }
 .change {
   font-size: 90%;
